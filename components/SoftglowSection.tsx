@@ -4,20 +4,20 @@ import { motion } from "framer-motion";
 
 const impressions = [
   {
+    title: "What the Softglow is",
+    body: "A living archive of leftover human memory. Not a library of books — a place where residual moments hang as soft golden and rose-colored threads of light. Some drift. Some still decide whether to stay.",
+  },
+  {
     title: "Residual Heat",
-    body: "The warmth that remains after a hand has left the surface. Not the heat of the living, but the memory of contact.",
+    body: "The warmth left after contact. Not living body heat — the memory of a hand, a presence, a moment that has not fully gone.",
   },
   {
     title: "Attention",
-    body: "The only force that keeps a thread from thinning. To look carefully is to keep something coherent a little longer.",
+    body: "The force that keeps a memory thread from thinning. Looking carefully is how something stays coherent a little longer.",
   },
   {
-    title: "The Softglow",
-    body: "A living archive of residual human memory. Gold and rose threads drift at different heights, some resting, some still deciding.",
-  },
-  {
-    title: "Coherence",
-    body: "What remains when extraction is refused. The collection survives only through sustained, non-extractive presence.",
+    title: "The story",
+    body: "Lina walks through a doorway that should not open. Inside she meets the Archivist, who is bound to the Softglow. Slow-burn romance. Soft magic. No epic wars — intimacy and presence under pressure.",
   },
 ];
 
@@ -31,16 +31,24 @@ export default function SoftglowSection() {
           viewport={{ once: true }}
           className="text-softglow-gold-dim text-sm tracking-[0.3em] uppercase mb-4"
         >
-          The Archive
+          The world of the book
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-light text-softglow-paper mb-16 max-w-2xl"
+          className="text-4xl md:text-5xl font-light text-softglow-paper mb-6 max-w-2xl"
         >
-          What the Softglow keeps
+          What Softglow Threshold is about
         </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-softglow-paper/70 text-lg max-w-2xl mb-16 leading-relaxed"
+        >
+          A quiet fantasy romance. A woman enters a living memory archive and meets the man bound to it. Soft magic, slow burn, sensory detail — not court intrigue or dragon battles.
+        </motion.p>
 
         <div className="grid md:grid-cols-2 gap-8">
           {impressions.map((item, i) => (
