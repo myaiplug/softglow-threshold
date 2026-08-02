@@ -72,7 +72,7 @@ export default function HeroThreshold() {
           transition={{ delay: 0.4, duration: 1.2 }}
           className="text-softglow-gold-dim text-sm tracking-[0.35em] uppercase mb-6"
         >
-          Book One of the Softglow Sequence
+          A quiet fantasy romance · Book One
         </motion.p>
 
         <motion.h1
@@ -93,9 +93,9 @@ export default function HeroThreshold() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.4, duration: 1.2 }}
-          className="mt-8 text-softglow-paper/70 text-base md:text-lg max-w-md mx-auto leading-relaxed"
+          className="mt-8 text-softglow-paper/70 text-base md:text-lg max-w-lg mx-auto leading-relaxed"
         >
-          She walked through a door that was never meant to open.
+          She walked through a door that was never meant to open — into a living archive of residual memory, and toward the man bound to keep it.
         </motion.p>
 
         <motion.div
@@ -115,7 +115,7 @@ export default function HeroThreshold() {
             href="#archive"
             className="px-8 py-4 border border-softglow-gold/40 text-softglow-gold-dim tracking-wide hover:border-softglow-gold hover:text-softglow-gold transition-colors duration-500"
           >
-            Enter the Archive
+            What this book is about
           </a>
         </motion.div>
       </div>
