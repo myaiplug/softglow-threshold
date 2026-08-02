@@ -2,22 +2,22 @@
 
 import { motion } from "framer-motion";
 
-const impressions = [
+const facts = [
   {
-    title: "What the Softglow is",
-    body: "A living archive of leftover human memory. Not a library of books — a place where residual moments hang as soft golden and rose-colored threads of light. Some drift. Some still decide whether to stay.",
+    title: "What kind of place it is",
+    body: "Think of a quiet museum that does not hold objects. It holds leftover moments from people\u2019s lives — the feeling after someone left the room, a conversation that never finished, warmth that stayed on a surface. Those moments appear as thin threads of soft gold and rose light floating in the air.",
   },
   {
-    title: "Residual Heat",
-    body: "The warmth left after contact. Not living body heat — the memory of a hand, a presence, a moment that has not fully gone.",
+    title: "How it looks",
+    body: "A large, still interior. Not outdoors. Not a city. Soft light, no harsh neon. Threads of gold and rose drift at different heights. Some hang still. Some move slowly. The air feels warm in places, like residual body heat after contact.",
   },
   {
-    title: "Attention",
-    body: "The force that keeps a memory thread from thinning. Looking carefully is how something stays coherent a little longer.",
+    title: "How the place works",
+    body: "If you look carefully at a thread, it stays clearer longer. If you ignore it or try to take from it, the thread thins and can fade. The Softglow is kept stable by attention, not by machines or magic spells.",
   },
   {
-    title: "The story",
-    body: "Lina walks through a doorway that should not open. Inside she meets the Archivist, who is bound to the Softglow. Slow-burn romance. Soft magic. No epic wars — intimacy and presence under pressure.",
+    title: "Who lives there",
+    body: "One man is bound to the Softglow: the Archivist. He cannot simply leave. He maintains the collection of residual memories. When Lina walks through the doorway, she enters this place and meets him. Almost the entire story happens inside the Softglow.",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function SoftglowSection() {
           viewport={{ once: true }}
           className="text-softglow-gold-dim text-sm tracking-[0.3em] uppercase mb-4"
         >
-          The world of the book
+          The setting
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -39,19 +39,27 @@ export default function SoftglowSection() {
           viewport={{ once: true }}
           className="text-4xl md:text-5xl font-light text-softglow-paper mb-6 max-w-2xl"
         >
-          What Softglow Threshold is about
+          What the Softglow is
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-softglow-paper/70 text-lg max-w-2xl mb-16 leading-relaxed"
+          className="text-softglow-paper/75 text-lg max-w-2xl mb-4 leading-relaxed"
         >
-          A quiet fantasy romance. A woman enters a living memory archive and meets the man bound to it. Soft magic, slow burn, sensory detail — not court intrigue or dragon battles.
+          The Softglow is the place where most of the book happens.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-softglow-paper/70 text-base max-w-2xl mb-16 leading-relaxed"
+        >
+          It is not a forest, castle, or city. It is closer to a quiet indoor archive of unfinished human moments — like a museum of residual feeling instead of objects — that you reach by walking through a doorway that should not open.
         </motion.p>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {impressions.map((item, i) => (
+          {facts.map((item, i) => (
             <motion.div
               key={item.title}
               initial={{ opacity: 0, y: 30 }}
@@ -62,7 +70,7 @@ export default function SoftglowSection() {
             >
               <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-softglow-gold/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <h3 className="text-softglow-gold text-xl mb-4 tracking-wide">{item.title}</h3>
-              <p className="text-softglow-paper/65 leading-relaxed">{item.body}</p>
+              <p className="text-softglow-paper/70 leading-relaxed">{item.body}</p>
             </motion.div>
           ))}
         </div>
